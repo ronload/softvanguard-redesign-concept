@@ -18,7 +18,7 @@ export default function Brand({
   return (
     <Link href={href} className={cn(styles.wrapper, className)} {...props}>
       <Image
-        src="/images/softvanguard-slogo-blue.svg"
+        src="/images/icons/softvanguard-slogo-blue.svg"
         height={32}
         width={32}
         alt="SoftVanguard Logo"
@@ -26,7 +26,7 @@ export default function Brand({
         priority
       />
       <Image
-        src="/images/softvanguard-wlogo-blue.svg"
+        src="/images/icons/softvanguard-wlogo-blue.svg"
         height={32}
         width={256}
         alt="SoftVanguard"

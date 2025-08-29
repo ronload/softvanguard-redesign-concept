@@ -1,4 +1,30 @@
 .container {
-  border: 1px solid blue;
-  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--spacing-10);
+  width: 4rem;
+  padding: 0 var(--spacing-3);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-secondary);
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--border-radius-lg);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.container:hover {
+  color: var(--text-primary);
+  background-color: var(--bg-tertiary);
+  border-color: var(--border-medium);
+}
+
+.container:focus-visible {
+  box-shadow: var(--focus-ring);
+}
+
+.container:active {
+  background-color: var(--color-gray-200);
 }

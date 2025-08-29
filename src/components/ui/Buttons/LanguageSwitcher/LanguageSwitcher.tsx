@@ -12,7 +12,7 @@ export default function LanguageSwitcher({
 }: LanguageSwitcherProps) {
   return (
     <button className={cn(styles.container, className)} {...props}>
-      LanguageSwitcher
+      lang
     </button>
   );
 }

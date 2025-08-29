@@ -2,9 +2,31 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 10rem;
-  height: 100%;
-  border: 1px solid blue;
-  color: #203e62;
+  height: var(--spacing-10);
+  padding: 0 var(--spacing-4);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-secondary);
   background-color: transparent;
+  border-radius: var(--border-radius-lg);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.container:hover {
+  color: var(--text-primary);
+  background-color: var(--bg-tertiary);
+  box-shadow: var(--shadow-sm);
+}
+
+.container:focus-visible {
+  color: var(--text-primary);
+  background-color: var(--bg-tertiary);
+  box-shadow: var(--focus-ring);
+}
+
+.container:active {
+  background-color: var(--color-gray-200);
+  box-shadow: none;
 }
