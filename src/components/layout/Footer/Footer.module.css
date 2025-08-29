@@ -5,7 +5,6 @@
   -webkit-backdrop-filter: blur(8px);
   color: var(--text-primary);
   padding: var(--spacing-16) 0 var(--spacing-8);
-  margin-top: var(--spacing-24);
   box-shadow:
     0 -4px 6px -1px rgb(0 0 0 / 0.1),
     0 -2px 4px -2px rgb(0 0 0 / 0.1);
