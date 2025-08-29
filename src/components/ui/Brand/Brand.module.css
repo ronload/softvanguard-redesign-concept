@@ -1,0 +1,17 @@
+.wrapper {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  height: 2rem;
+  width: 2rem;
+  border: 1px solid blue;
+}
+
+.text {
+  height: 2rem;
+  width: auto;
+  border: 1px solid blue;
+}
