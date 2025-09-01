@@ -1,6 +1,6 @@
 import Brand from '@/components/ui/Brand';
 import styles from './Header.module.css';
-import { HeaderDropDownMenu } from '@/components/ui/Navigation';
+import { HeaderNavButton } from '@/components/ui/Navigation';
 import { LanguageSwitcher, LoginButton } from '@/components/ui/Buttons';
 
 export default function Header() {
@@ -8,17 +8,11 @@ export default function Header() {
     <header className={styles.container}>
       <Brand className={styles.brand} />
       <div className={styles.dropDownMenuWrapper}>
-        <HeaderDropDownMenu className={styles.menu}>Company</HeaderDropDownMenu>
-        <HeaderDropDownMenu className={styles.menu}>
-          Platforms
-        </HeaderDropDownMenu>
-        <HeaderDropDownMenu className={styles.menu}>
-          Case Studies
-        </HeaderDropDownMenu>
-        <HeaderDropDownMenu className={styles.menu}>
-          Services
-        </HeaderDropDownMenu>
-        <HeaderDropDownMenu className={styles.menu}>Support</HeaderDropDownMenu>
+        <HeaderNavButton className={styles.menu}>Company</HeaderNavButton>
+        <HeaderNavButton className={styles.menu}>Platforms</HeaderNavButton>
+        <HeaderNavButton className={styles.menu}>Case Studies</HeaderNavButton>
+        <HeaderNavButton className={styles.menu}>Services</HeaderNavButton>
+        <HeaderNavButton className={styles.menu}>Support</HeaderNavButton>
       </div>
       <LanguageSwitcher className={styles.switcher} />
       <LoginButton className={styles.login} />
