@@ -1,6 +1,6 @@
 import Brand from '@/components/ui/Brand';
 import styles from './Header.module.css';
-import { HeaderButton } from './HeaderButton';
+import HeaderButton from '@/components/ui/Buttons/HeaderButton';
 import { LanguageSwitcher, LoginButton } from '@/components/ui/Buttons';
 
 export default function Header() {
