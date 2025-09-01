@@ -1,4 +1,4 @@
-import TextCard from '@/components/ui/Cards';
+import { TextCard } from '@/components/ui/Cards';
 import FloatingCircles from '@/components/ui/FloatingCircles';
 import styles from './Hero.module.css';
 
@@ -6,7 +6,6 @@ export default function Hero() {
   return (
     <section className={styles.hero}>
       <FloatingCircles />
-
       <div className="container">
         <div className={styles.content}>
           <h1 className={styles.title}>
