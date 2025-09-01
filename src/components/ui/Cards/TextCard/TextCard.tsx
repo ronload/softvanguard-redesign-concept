@@ -2,14 +2,25 @@ import { cn } from '@/lib/utils';
 import styles from './TextCard.module.css';
 import Image from 'next/image';
 
+interface BackgroundImage {
+  url: string;
+  alt: string;
+}
+
 interface TextCardProps {
   className?: string;
+  /**
+   * Card title text
+   */
   title: string;
+  /**
+   * Card subtitle/description text
+   */
   subtitle: string;
-  backgroundImage?: {
-    url: string;
-    alt: string;
-  };
+  /**
+   * Optional background image configuration
+   */
+  backgroundImage?: BackgroundImage;
 }
 
 export default function TextCard({
