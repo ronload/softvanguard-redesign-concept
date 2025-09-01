@@ -1,17 +1,16 @@
 import { cn } from '@/lib/utils';
-import styles from './HeaderDropDownMenu.module.css';
+import styles from './HeaderNavButton.module.css';
 
-interface HeaderDropDownMenuProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+interface HeaderNavButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string;
   children: React.ReactNode;
 }
 
-export default function HeaderDropDownMenu({
+export default function HeaderNavButton({
   children,
   className = '',
   ...props
-}: HeaderDropDownMenuProps) {
+}: HeaderNavButtonProps) {
   return (
     <button className={cn(styles.container, className)} {...props}>
       {children}
