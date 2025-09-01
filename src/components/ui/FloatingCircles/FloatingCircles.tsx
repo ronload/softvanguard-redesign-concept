@@ -3,9 +3,25 @@ import styles from './FloatingCircles.module.css';
 
 interface FloatingCirclesProps {
   className?: string;
+  /**
+   * Number of floating circles to display
+   * @default 8
+   */
   circleCount?: number;
+  /**
+   * CSS color value for circles
+   * @default 'var(--brand-primary)'
+   */
   color?: string;
+  /**
+   * Opacity value for circles (0-1)
+   * @default 0.3
+   */
   opacity?: number;
+  /**
+   * Blur effect intensity in pixels
+   * @default 8
+   */
   blur?: number;
 }
 
