@@ -9,15 +9,9 @@ export default function Header() {
       <Brand className={styles.brand} />
       <div className={styles.dropDownMenuWrapper}>
         <HeaderNavButton className={styles.menu}>Company</HeaderNavButton>
-        <HeaderNavButton className={styles.menu}>
-          Platforms
-        </HeaderNavButton>
-        <HeaderNavButton className={styles.menu}>
-          Case Studies
-        </HeaderNavButton>
-        <HeaderNavButton className={styles.menu}>
-          Services
-        </HeaderNavButton>
+        <HeaderNavButton className={styles.menu}>Platforms</HeaderNavButton>
+        <HeaderNavButton className={styles.menu}>Case Studies</HeaderNavButton>
+        <HeaderNavButton className={styles.menu}>Services</HeaderNavButton>
         <HeaderNavButton className={styles.menu}>Support</HeaderNavButton>
       </div>
       <LanguageSwitcher className={styles.switcher} />

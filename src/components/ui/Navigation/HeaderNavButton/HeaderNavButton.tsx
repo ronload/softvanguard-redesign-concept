@@ -1,7 +1,8 @@
 import { cn } from '@/lib/utils';
 import styles from './HeaderNavButton.module.css';
 
-interface HeaderNavButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+interface HeaderNavButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string;
   children: React.ReactNode;
 }
